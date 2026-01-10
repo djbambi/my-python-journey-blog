@@ -1,30 +1,44 @@
-site_name: My MkDocs Material Documentation
+site_name: My Python Journey Blog
 site_url: https://sitename.example
 theme:
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
     - navigation.footer
+    - navigation.indexes
+    - content.tooltips
+    - content.code.copy
   icon:
     logo: fontawesome/solid/w
   # font:
   #   text: Merriweather Sans
   #   code: Red Hat Mono
   name: material
-  palette:
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark mode
-      primary: green
-      accent: deep purple
-
-    # Light Mode
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: blue
-      accent: deep orange
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
@@ -47,3 +61,16 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 copyright: Copyright &copy; 2025 David Bambrough
+plugins:
+  - search
+  - blog:
+      blog_dir: blog
+      archive: true
+      categories: true
+# nav:
+#   - Home: index.md
+#   - Blog:
+#       - blog/index.md
+#   - Notes:
+#       - notes/index.md
+#   - About: about.md

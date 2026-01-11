@@ -11,3 +11,8 @@ tags:
 description: >
   I'm developing an api client to get data from OpenWeather. This is more of a mind dump describing the process. I'm interested in explaining why the design decisions were made, justifying them and also considering alternative approaches.
 ---
+
+# OpenWeather API Client Design”
+
+__This is a mind dump of my design decisions for the OpenWeather API Client.__
+

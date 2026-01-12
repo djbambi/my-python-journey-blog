@@ -23,6 +23,8 @@ It was to **understand the design decisions** that make Python code easier to re
 
 This post walks through my thought process and the key choices I made while implementing a simple weather client.
 
+<!-- more -->
+
 ---
 
 ## The problem I was solving

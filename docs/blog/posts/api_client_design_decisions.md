@@ -12,10 +12,6 @@ description: >
   I'm developing an api client to get data from OpenWeather. This is more of a mind dump describing the process. I'm interested in explaining why the design decisions were made, justifying them and also considering alternative approaches.
 ---
 
-# OpenWeather API Client Design”
-
-__This is a mind dump of my design decisions for the OpenWeather API Client.__
-
 # Designing a Simple, Testable Weather API Client in Python
 
 When I started building a small Python client to fetch data from the OpenWeather API, my goal wasn’t to build a full pipeline or production system.  

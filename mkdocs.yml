@@ -1,6 +1,11 @@
 site_name: My Python Journey Blog
+site_description: Notes on learning Python, data engineering, and building things in public.
 site_url: https://djbambi.github.io/my-python-journey-blog/
+
 theme:
+  name: material
+  custom_dir: overrides
+
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -25,6 +30,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+
   features:
     - navigation.tabs
     - navigation.sections
@@ -33,13 +39,10 @@ theme:
     - navigation.indexes
     - content.tooltips
     - content.code.copy
+
   icon:
     logo: fontawesome/solid/w
-  # font:
-  #   text: Merriweather Sans
-  #   code: Red Hat Mono
-  name: material
-  custom_dir: overrides
+
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
@@ -61,7 +64,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
 copyright: Copyright &copy; 2025 David Bambrough
+
 plugins:
   - search
   - blog:
@@ -69,21 +74,14 @@ plugins:
       archive: true
       categories: true
   - rss:
-    use_material_blog: true
-    match_path: "blog/posts/.*"
-    date_from_meta:
-      as_creation: "date.created"
-      as_update: "git"
+      use_material_blog: true
+      match_path: "blog/posts/.*"
+      date_from_meta:
+        as_creation: "date.created"
+        as_update: "git"
 
 nav:
   - Home: index.md
   - Blog:
       - blog/index.md
-  - RSS: feed_rss_created.xml
-# nav:
-#   - Home: index.md
-#   - Blog:
-#       - blog/index.md
-#   - Notes:
-#       - notes/index.md
-#   - About: about.md
+  - RSS: https://djbambi.github.io/my-python-journey-blog/feed_rss_created.xml

@@ -39,6 +39,7 @@ theme:
   #   text: Merriweather Sans
   #   code: Red Hat Mono
   name: material
+  custom_dir: overrides
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
@@ -68,10 +69,11 @@ plugins:
       archive: true
       categories: true
   - rss:
-      match_path: "blog/posts/.*"
-      date_from_meta:
-        as_creation: date.created
-        as_update: date.updated
+    use_material_blog: true
+    match_path: "blog/posts/.*"
+    date_from_meta:
+      as_creation: "date.created"
+      as_update: "date.updated"
 
 nav:
   - Home: index.md

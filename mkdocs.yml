@@ -72,6 +72,12 @@ plugins:
       date_from_meta:
         as_creation: date.created
         as_update: date.updated
+
+nav:
+  - Home: index.md
+  - Blog:
+      - blog/index.md
+  - RSS: feed_rss_created.xml
 # nav:
 #   - Home: index.md
 #   - Blog:

@@ -18,6 +18,8 @@ I recently did a Docker course on Udemy, but the real learning didn’t come fro
 
 What I thought Docker was and what it *actually is* turned out to be subtly but importantly different.
 
+<!-- more -->
+
 ---
 
 ## Containers are not mini computers

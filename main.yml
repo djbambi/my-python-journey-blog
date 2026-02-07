@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <link rel="alternate" type="application/rss+xml" title="My Python Journey Blog (RSS)" href="{{ config.site_url }}feed_rss_created.xml">
+{% endblock %}
